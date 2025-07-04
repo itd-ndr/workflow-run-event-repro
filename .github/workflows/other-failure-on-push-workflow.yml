@@ -5,5 +5,4 @@ on:
 
 jobs:
   test:
-    steps:
-      using: itd-ndr/workflow-run-event-repro/.github/workflows/reusable.yml@master
+    uses: itd-ndr/workflow-run-event-repro/.github/workflows/reusable.yml@master
