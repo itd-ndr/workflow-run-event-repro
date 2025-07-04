@@ -1,4 +1,4 @@
-name: failing-on-push
+name: other-failing-on-push
 on:
   push:
     branch: [master]
