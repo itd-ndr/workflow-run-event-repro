@@ -6,4 +6,4 @@ jobs:
   job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo test
+      - run: echo test2
