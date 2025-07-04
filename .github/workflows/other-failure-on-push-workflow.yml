@@ -1,0 +1,9 @@
+name: failing-on-push
+on:
+  push:
+    branch: [master]
+
+jobs:
+  test:
+    steps:
+      using: not-existing-reusable-workflow
