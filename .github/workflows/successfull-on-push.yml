@@ -1,3 +1,4 @@
+name: successfull-on-push
 on:
   push:
     branch: [master]

@@ -1,7 +1,9 @@
+name: failing-on-push
 on:
   push:
     branch: [master]
 
 jobs:
   test:
-   uses: itd-ndr/workflow-run-event-repro/.github/workflows/reusable-workflow.yml@master
+    steps:
+      run: echo test

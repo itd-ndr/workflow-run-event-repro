@@ -1,5 +1,5 @@
-
-run-name: "workflow_run: ${{ github.event.workflow.name }} (${{ github.event.workflow_run.id }}, ${{ github.event.workflow_run.status }}, ${{ github.event.workflow_run.conclusion }})"
+name: on-workflow-run
+run-name: "workflow_run: ${{ github.event.workflow.name }} (${{ github.event.workflow_run.id }}, ${{ github.event.action }}, ${{ github.event.workflow_run.conclusion }})"
 on:
   workflow_run:
     workflows: ["**"]
