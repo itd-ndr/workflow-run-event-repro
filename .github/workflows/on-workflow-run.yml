@@ -1,0 +1,11 @@
+
+run-name: "workflow_run: ${{ github.event.workflow.name }} (${{ github.event.workflow_run.id }}, ${{ github.event.workflow_run.status }}, ${{ github.event.workflow_run.conclusion }})"
+on:
+  workflow_run:
+    workflows: ["**"]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo '${{ toJSON(github.event) | jq }}'"
