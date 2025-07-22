@@ -1,0 +1,11 @@
+name: on-check-suite
+run-name: "check-suite: ${{ github.event.workflow.name }} (${{ github.event.workflow_run.id }}, ${{ github.event.action }}, ${{ github.event.workflow_run.conclusion }})"
+on:
+  check_suite:
+    workflows: ["**"]
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "echo '${{ toJSON(github.event) }}' | jq"
